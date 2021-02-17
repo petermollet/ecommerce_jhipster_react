@@ -7,11 +7,11 @@ import LoginView from '../views/LoginView';
 
 const customHistory = createBrowserHistory();
 
-const Routes = () => {
+const Routes = ({ setIsLogged }) => {
     return (
         <Switch history={customHistory}>
             <Route exact path={URL_HOME} component={HomeView} />
-            <Route path={URL_LOGIN} component={LoginView} />
+            <Route path={URL_LOGIN} render={(props) => <LoginView setIsLogged={setIsLogged} {...props}/>} />
         </Switch>
     );
 };
