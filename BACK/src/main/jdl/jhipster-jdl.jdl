@@ -1,0 +1,45 @@
+
+
+entity Address{
+	number String required,
+    road String required,
+    town String required,
+    zipCode String required
+}
+
+entity Client {
+	phone String
+}
+
+entity CommandLine {
+	quantity Integer required min(0)
+}
+
+entity Product{
+	name String required,
+    price BigDecimal required,
+    description TextBlob
+}
+
+entity ProductType{
+	label String required,
+    codeRef String required
+}
+
+relationship OneToOne{
+	Client{user required} to User
+}
+
+relationship OneToMany{
+	Client{cart} to CommandLine{client required}
+}
+
+relationship ManyToOne{
+    CommandLine{product required} to Product,
+    Client{address required} to Address,
+    Product{type required} to ProductType
+}
+
+paginate Product with infinite-scroll
+dto * with mapstruct
+service all with serviceImpl

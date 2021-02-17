@@ -1,0 +1,11 @@
+id;name;price;description;type_id
+1;Citron;5;../fake-data/blob/hipster.txt;1
+2;Banane;7;../fake-data/blob/hipster.txt;1
+3;Pomme;9;../fake-data/blob/hipster.txt;1
+4;Poivron;7;../fake-data/blob/hipster.txt;2
+5;Carotte;8;../fake-data/blob/hipster.txt;2
+6;Pomme de terre;8;../fake-data/blob/hipster.txt;2
+7;Tomate;6;../fake-data/blob/hipster.txt;1
+8;Radis;4;../fake-data/blob/hipster.txt;2
+9;Orange;5;../fake-data/blob/hipster.txt;1
+10;Mangue;5;../fake-data/blob/hipster.txt;1
